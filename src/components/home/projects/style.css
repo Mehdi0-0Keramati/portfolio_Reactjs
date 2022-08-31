@@ -1,0 +1,99 @@
+.projects {
+  color: black;
+}
+.items {
+  border: 1px solid rgb(32, 6, 49);
+  background: rgb(210, 210, 252);
+  padding: 1rem;
+  overflow: hidden;
+  z-index: 2;
+}
+.items:nth-child(1) {
+  border-radius: 2rem 0 0 2rem;
+}
+.items:nth-child(3) {
+  border-radius: 0 2rem 2rem 0;
+}
+
+.items_active {
+  position: relative;
+}
+.items_active::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: moveBg 0.5s ease-in-out forwards;
+  background: linear-gradient(to right, rgb(135, 100, 231), rgb(52, 147, 202));
+}
+@keyframes moveBg {
+  to {
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.overlay {
+  cursor: pointer;
+  opacity: 0;
+  overflow: hidden;
+  z-index: 2;
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(
+    24deg,
+    rgba(54, 13, 82, 0.873),
+    rgba(19, 19, 119, 0.8)
+  );
+  transition: 0.4s;
+}
+.item-list:hover .overlay {
+  height: 100%;
+  opacity: 1;
+}
+
+/*?Dark Mode */
+#dark .projects {
+  color: white;
+}
+#dark .items {
+  border: 1px solid gray;
+  background: rgb(31, 30, 30);
+}
+
+/*?Dark Mode */
+
+/* todo rtl styles */
+.rtlStyle .projectsTitle {
+  font-weight: bolder;
+}
+
+/* .rtlStyle .projects p {
+  font-size: 1.14rem;
+} */
+.rtlStyle .items:nth-child(1) {
+  border-radius: 0 2rem 2rem 0;
+}
+.rtlStyle .items:nth-child(3) {
+  border-radius: 2rem 0 0 2rem;
+}
+.rtlStyle .items {
+  font-weight: bolder;
+  font-style: italic;
+}
+@media only screen and (max-width: 700px) {
+  
+  .rtlStyle .items {
+    font-size: 0.8rem;
+  }
+}
+/* todo rtl styles */

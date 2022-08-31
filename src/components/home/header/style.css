@@ -1,0 +1,93 @@
+#header {
+  color: black;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  top: -4rem;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 3rem;
+  background-image: linear-gradient(
+      rgba(172, 172, 240, 0.5),
+      rgba(180, 177, 221, 0.5)
+    ),
+    url("../../../assets/img/lightModeBanner.jpg");
+  color: rgb(56, 53, 53);
+}
+.pic_header {
+  width: 80%;
+  animation: Img_anime 2s ease-in-out infinite alternate;
+}
+@keyframes Img_anime {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+.wrapper {
+  font-family: central_bold;
+}
+.link-connect {
+  color: rgb(40, 20, 94);
+  font-family: central_medium;
+}
+.titleSkills {
+  color: aqua;
+}
+/* !Dark  Mode! */
+
+#dark #header {
+  background-image: url("../../../assets/img/darkModeBanner.png");
+  color: white;
+}
+#dark #header p {
+  color: gray;
+}
+#dark #header .link-connect {
+  color: royalblue;
+}
+
+#dark .titleSkills {
+  color: royalblue;
+}
+
+/* !Dark  Mode! */
+
+/*todo rtl Styles */
+.rtlStyle #header .content_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.rtlStyle #header .content_header h1 {
+  font-weight: bolder;
+}
+.rtlStyle #header .content_header p {
+  text-align: justify;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+.rtlStyle .link-connect {
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+.text-anime {
+  font-size: 3.4rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .rtlStyle #header .content_header p {
+    font-size: 0.8rem;
+  }
+  .text-anime {
+    font-size: 1.8rem;
+  }
+}
+
+/*todo rtl Styles */

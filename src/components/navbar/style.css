@@ -1,0 +1,200 @@
+/* ?navbar */
+.fixed {
+  background: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  animation: fixed 0.3s linear forwards;
+}
+@keyframes fixed {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+nav {
+  font-family: central_bold;
+}
+.nav_link {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+.nav_link:hover {
+  color: royalblue;
+}
+/* ?navbar */
+/* ! social_Icon *********************/
+.social_icon {
+  position: relative;
+  margin-right: 0.7rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  padding: 0.4rem;
+  text-align: center;
+  z-index: 2;
+  color: white;
+  border: 1px solid black;
+}
+.social_icon::after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 0 0 transparent inset;
+  z-index: -2;
+  background: rgb(62, 44, 90);
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+    box-shadow: 0 0 0 2rem rgb(18, 6, 63) inset;
+  }
+}
+.social_icon:hover::after {
+  animation: scale 0.4s ease-in-out forwards;
+}
+.social_icon:hover {
+  color: rgb(161, 90, 253);
+}
+/* ! social_Icon *********************/
+
+/* todo Button_connect *********************/
+.btn_connect {
+  width: 120px;
+  position: relative;
+  font-family: central_medium;
+  z-index: 2;
+  padding: 0.7rem;
+  color: black;
+}
+.btn_connect::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  transition: 0.5s;
+  box-shadow: 0 0 0 #3e2c5a inset;
+}
+.btn_connect:hover {
+  color: white;
+}
+.btn_connect:hover::after {
+  box-shadow: 8rem 0 0 #3e2c5a inset;
+}
+/* todo Button_connect *********************/
+.custom-select {
+  cursor: pointer;
+}
+
+/*!Dark Mode  */
+.toggleTheme {
+  z-index: 10000;
+  position: absolute;
+  left: 1rem;
+  top: 2.5rem;
+}
+.toggleTheme input {
+  display: none;
+}
+.toggleTheme input + label {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("../../assets/img/moon.svg");
+}
+.toggleTheme input:checked + label {
+  background-image: url("../../assets/img/sun.svg");
+}
+
+#dark .fixed {
+  background: rgb(26, 25, 25);
+  color: white;
+}
+#dark .navbar-brand {
+  color: white;
+}
+#dark .nav_link {
+  color: white;
+}
+#dark .nav_link:hover {
+  color: royalblue;
+}
+#dark .social_icon {
+  color: white;
+  border: 1px solid white;
+}
+#dark .social_icon::after {
+  background: #333;
+}
+
+@keyframes DarkScale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+    box-shadow: 0 0 0 2rem white inset;
+  }
+}
+#dark .social_icon:hover::after {
+  animation: DarkScale 0.4s ease-in-out forwards;
+}
+#dark .social_icon:hover {
+  color: #333;
+}
+
+#dark .btn_connect {
+  color: white;
+}
+#dark .btn_connect::after {
+  box-shadow: 0 0 0 white inset;
+}
+#dark .btn_connect:hover {
+  color: black;
+}
+#dark .btn_connect:hover::after {
+  box-shadow: 8rem 0 0 white inset;
+}
+/*!Dark Mode  */
+
+/*todo rtl styles */
+.rtlStyle .nav_link {
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+.rtlStyle .btn_connect {
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+/*todo rtl styles */
+.custom-select {
+  padding: 0.8rem 0.2rem;
+  border: 1px solid #6d5297;
+  background: #a37edf;
+}
+#dark .custom-select {
+  color: white;
+  border-color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  .custom-select {
+    width: 50%;
+  }
+}

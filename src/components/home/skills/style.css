@@ -1,0 +1,55 @@
+.skills-container {
+  width: 100%;
+  height: auto;
+}
+.skills {
+  position: relative;
+  top: -5rem;
+  width: 80%;
+  height: auto;
+  border-radius: 3rem;
+  background: rgb(210, 210, 252);
+  color: black;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 1.5rem;
+}
+/* todo Dark Mode */
+#dark .skills-container {
+  background: radial-gradient(
+      circle at bottom left,
+      rgba(36, 5, 65, 0.3),
+      transparent 30rem
+    ),
+    radial-gradient(circle at 10% 90%, rgba(92, 3, 61, 0.3), transparent 10rem),
+    radial-gradient(
+      circle at bottom right,
+      rgba(36, 5, 65, 0.3),
+      transparent 30rem
+    ),
+    radial-gradient(circle at 90% 90%, rgba(92, 3, 61, 0.3), transparent 10rem);
+}
+#dark .skills {
+  background: rgb(25, 25, 27);
+  color: white;
+}
+
+/* todo Dark Mode */
+
+/* !rtl styles */
+
+.rtlStyle .skillsTitle {
+  font-weight: bolder;
+  /* font-size: 1.5rem; */
+}
+.rtlStyle p {
+  font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .rtlStyle p{
+    font-size: .8rem;
+  }
+}
+
+/* !rtl styles */
