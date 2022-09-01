@@ -38,6 +38,7 @@ body::-webkit-scrollbar-thumb {
   background-repeat: no-repeat;
   list-style: none;
   outline: none;
+  background:red;
 }
 a {
   text-decoration: none;
@@ -46,7 +47,6 @@ body {
   width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  /* background: rgb(20, 19, 19); */
   font-family: central_book;
 }
 img {
