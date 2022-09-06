@@ -8,9 +8,14 @@
 .rtlStyle .input_group label {
   right: -12rem;
 }
+@media screen and (max-width: 800px) {
+  .rtlStyle .input_group label {
+    right: -6rem;
+  }
+}
 .container {
   margin-top: 2rem;
-  min-height: 84vh;
+  min-height: 110vh;
 }
 .form {
   color: rgb(97, 18, 97);

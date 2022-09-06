@@ -38,13 +38,14 @@ body::-webkit-scrollbar-thumb {
   background-repeat: no-repeat;
   list-style: none;
   outline: none;
-  background:red;
+  user-select: none;
+  user-zoom: none !important;
 }
 a {
   text-decoration: none;
 }
 body {
-  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: central_book;

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import { Link } from "react-scroll";
-import { FaInstagram, FaGithub, FaLinkedinIn, FaFlagUsa } from "react-icons/fa";
+import { FaInstagram, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import "./style.css";
 
 import { useContext } from "react";
@@ -115,7 +115,6 @@ const Navbar = () => {
                   className="mx-lg-3 custom-select"
                   onChange={changeLanguageHandler}
                 >
-                  <label htmlFor="opt">hello</label>
                   <option id="opt" value="en">English </option>
                   <option value="fa">Persian </option>
                 </select>
