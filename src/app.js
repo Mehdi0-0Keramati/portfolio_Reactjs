@@ -18,7 +18,7 @@ const App = () => {
   return (
     <>
       <ApiContext.Provider value={{ theme, toggleTheme, t, i18n }}>
-        <div id={theme}>
+        <div className="main-container" id={theme}>
           <HashRouter>
             <Navbar />
             <ProgressBar gradient={true} gradientColor="royalblue" />

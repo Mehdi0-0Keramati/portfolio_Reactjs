@@ -49,6 +49,12 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: central_book;
+  user-select: none;
+  user-zoom: none !important;
+}
+.main-container {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 img {
   width: 100%;
