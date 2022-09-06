@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio_Reactjs/static/css/main.33d519aa.css",
-    "main.js": "/portfolio_Reactjs/static/js/main.e7ca8cc1.js",
+    "main.css": "/portfolio_Reactjs/static/css/main.1b3c4075.css",
+    "main.js": "/portfolio_Reactjs/static/js/main.a396ce88.js",
     "static/media/lightModeBanner.jpg": "/portfolio_Reactjs/static/media/lightModeBanner.11c1aebdb807d7d35c9a.jpg",
     "static/media/darkModeBanner.png": "/portfolio_Reactjs/static/media/darkModeBanner.cc1273af450504afe755.png",
     "static/media/header-img.svg": "/portfolio_Reactjs/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg",
@@ -17,11 +17,11 @@
     "static/media/moon.svg": "/portfolio_Reactjs/static/media/moon.31781cb05b1b4620aab6.svg",
     "static/media/sun.svg": "/portfolio_Reactjs/static/media/sun.fc115c58331d1d5189fc.svg",
     "index.html": "/portfolio_Reactjs/index.html",
-    "main.33d519aa.css.map": "/portfolio_Reactjs/static/css/main.33d519aa.css.map",
-    "main.e7ca8cc1.js.map": "/portfolio_Reactjs/static/js/main.e7ca8cc1.js.map"
+    "main.1b3c4075.css.map": "/portfolio_Reactjs/static/css/main.1b3c4075.css.map",
+    "main.a396ce88.js.map": "/portfolio_Reactjs/static/js/main.a396ce88.js.map"
   },
   "entrypoints": [
-    "static/css/main.33d519aa.css",
-    "static/js/main.e7ca8cc1.js"
+    "static/css/main.1b3c4075.css",
+    "static/js/main.a396ce88.js"
   ]
 }
